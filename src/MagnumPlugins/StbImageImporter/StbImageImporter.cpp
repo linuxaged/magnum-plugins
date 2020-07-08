@@ -92,7 +92,7 @@ void StbImageImporter::doOpenData(const Containers::ArrayView<const char> data) 
     /* The docs say this is enabled by default, but it's *not*. Ugh. */
     /** @todo do BGR -> RGB processing here instead, this may get obsolete:
         https://github.com/nothings/stb/pull/950 */
-    stbi_convert_iphone_png_to_rgb_thread(true);
+    //stbi_convert_iphone_png_to_rgb_thread(true);
 
     /* Try to open as a gif. If that succeeds, great. If that fails, the actual
        opening (and error handling) is done in doImage2D(). */
